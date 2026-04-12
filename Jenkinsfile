@@ -16,7 +16,7 @@ pipeline {
             steps { powershell 'java -jar build/libs/hello-world-java-V1.0.jar'}           
         }    
 }
-
+/*
 post {
         always {
             echo 'Cleaning up workspace'
@@ -31,4 +31,5 @@ post {
             // You could add notification steps here
         }
     }
+    */
 }
