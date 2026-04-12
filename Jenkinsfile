@@ -24,7 +24,7 @@ post {
         }
         success {
             echo 'Build succeeded!!!'
-            //  could add notification steps here
+            // You could add notification steps here
         }
         failure {
             echo 'Build failed!'
