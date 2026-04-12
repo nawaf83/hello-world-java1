@@ -33,7 +33,7 @@ task BuildJar(type: Jar) {
     }
 
     from sourceSets.main.output  // Include compiled classes in the JAR
-    archiveBaseName = 'my-application'  // Name of the JAR file
+    archiveBaseName = 'hello-world-java'  // Name of the JAR file
     destinationDirectory = file('build/libs')  // Output directory for the JAR file
 }
 // Modify the defualt  JAR task to include the Main-Class
@@ -42,7 +42,7 @@ jar {
         attributes 'Main-Class': 'com.example.HelloWorld' 
     }
     from { sourceSets.main.output }
-    archiveBaseName = 'my-application'
+    archiveBaseName = 'hello-world-java'
     destinationDirectory = file('build/libs')
 }
 // Task to copy resource files to a specific directory
